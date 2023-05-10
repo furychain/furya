@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package furyaxyz.furya.irc;
+
+import "gogoproto/gogo.proto";
+import "furya/irc/params.proto";
+import "furya/irc/irc_requests.proto";
+
+option go_package = "github.com/furychain/furya/x/irc/types";
+
+// GenesisState defines the irc module's genesis state.
+message GenesisState {
+           Params               params          = 1 [(gogoproto.nullable) = false];
+           repeated IRCRequest  IRCRequestList  = 2 [(gogoproto.nullable) = false];
+}
+
