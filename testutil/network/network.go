@@ -17,7 +17,7 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/xblackfury/furya/app"
+	"github.com/furychain/furya/app"
 )
 
 type (

@@ -2,8 +2,8 @@ package rollapp
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/xblackfury/furya/x/rollapp/keeper"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/keeper"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

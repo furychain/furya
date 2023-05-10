@@ -12,10 +12,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/xblackfury/furya/testutil/network"
-	"github.com/xblackfury/furya/testutil/nullify"
-	"github.com/xblackfury/furya/x/irc/client/cli"
-	"github.com/xblackfury/furya/x/irc/types"
+	"github.com/furychain/furya/testutil/network"
+	"github.com/furychain/furya/testutil/nullify"
+	"github.com/furychain/furya/x/irc/client/cli"
+	"github.com/furychain/furya/x/irc/types"
 )
 
 // Prevent strconv unused error

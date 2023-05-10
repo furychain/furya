@@ -673,19 +673,19 @@ func RegisterQueryHandlerClient(ctx context.Context, mux *runtime.ServeMux, clie
 }
 
 var (
-	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"xblackfury", "furya", "sequencer", "params"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "sequencer", "params"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_Sequencer_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"xblackfury", "furya", "sequencer", "sequencerAddress"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Sequencer_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"furychain", "furya", "sequencer", "sequencerAddress"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_SequencerAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2}, []string{"xblackfury", "furya", "sequencer"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_SequencerAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2}, []string{"furychain", "furya", "sequencer"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_SequencersByRollapp_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"xblackfury", "furya", "sequencer", "sequencers_by_rollapp", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_SequencersByRollapp_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furychain", "furya", "sequencer", "sequencers_by_rollapp", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_SequencersByRollappAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"xblackfury", "furya", "sequencer", "sequencers_by_rollapp"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_SequencersByRollappAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "sequencer", "sequencers_by_rollapp"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_Scheduler_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"xblackfury", "furya", "sequencer", "scheduler", "sequencerAddress"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Scheduler_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furychain", "furya", "sequencer", "scheduler", "sequencerAddress"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_SchedulerAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"xblackfury", "furya", "sequencer", "scheduler"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_SchedulerAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "sequencer", "scheduler"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (

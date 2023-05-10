@@ -54,7 +54,7 @@ func (OperatingStatus) EnumDescriptor() ([]byte, []int) {
 }
 
 func init() {
-	proto.RegisterEnum("xblackfury.furya.sequencer.OperatingStatus", OperatingStatus_name, OperatingStatus_value)
+	proto.RegisterEnum("furychain.furya.sequencer.OperatingStatus", OperatingStatus_name, OperatingStatus_value)
 }
 
 func init() {

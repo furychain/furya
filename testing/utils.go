@@ -16,10 +16,10 @@ import (
 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	furyaapp "github.com/xblackfury/furya/app"
-	sharedtypes "github.com/xblackfury/furya/shared/types"
-	rollapptypes "github.com/xblackfury/furya/x/rollapp/types"
-	sequencertypes "github.com/xblackfury/furya/x/sequencer/types"
+	furyaapp "github.com/furychain/furya/app"
+	sharedtypes "github.com/furychain/furya/shared/types"
+	rollapptypes "github.com/furychain/furya/x/rollapp/types"
+	sequencertypes "github.com/furychain/furya/x/sequencer/types"
 )
 
 var (

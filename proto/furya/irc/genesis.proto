@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package xblackfury.furya.irc;
+package furychain.furya.irc;
 
 import "gogoproto/gogo.proto";
 import "furya/irc/params.proto";
 import "furya/irc/irc_requests.proto";
 
-option go_package = "github.com/xblackfury/furya/x/irc/types";
+option go_package = "github.com/furychain/furya/x/irc/types";
 
 // GenesisState defines the irc module's genesis state.
 message GenesisState {

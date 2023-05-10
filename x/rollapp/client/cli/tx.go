@@ -8,7 +8,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 var (

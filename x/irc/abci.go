@@ -3,7 +3,7 @@ package irc
 import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/xblackfury/furya/x/irc/keeper"
+	"github.com/furychain/furya/x/irc/keeper"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

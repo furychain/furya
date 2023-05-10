@@ -7,11 +7,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	sharedtypes "github.com/xblackfury/furya/shared/types"
-	"github.com/xblackfury/furya/simulation"
-	simulationtypes "github.com/xblackfury/furya/simulation/types"
-	"github.com/xblackfury/furya/x/rollapp/keeper"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	sharedtypes "github.com/furychain/furya/shared/types"
+	"github.com/furychain/furya/simulation"
+	simulationtypes "github.com/furychain/furya/simulation/types"
+	"github.com/furychain/furya/x/rollapp/keeper"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 func SimulateMsgCreateRollapp(

@@ -5,7 +5,7 @@ package types
 
 import (
 	fmt "fmt"
-	types "github.com/xblackfury/furya/shared/types"
+	types "github.com/furychain/furya/shared/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"
@@ -140,7 +140,7 @@ func (m *Rollapp) GetPermissionedAddresses() types.Sequencers {
 }
 
 func init() {
-	proto.RegisterType((*Rollapp)(nil), "xblackfury.furya.rollapp.Rollapp")
+	proto.RegisterType((*Rollapp)(nil), "furychain.furya.rollapp.Rollapp")
 }
 
 func init() { proto.RegisterFile("furya/rollapp/rollapp.proto", fileDescriptor_2c072320fdc0abd9) }

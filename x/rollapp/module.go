@@ -16,9 +16,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/xblackfury/furya/x/rollapp/client/cli"
-	"github.com/xblackfury/furya/x/rollapp/keeper"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/client/cli"
+	"github.com/furychain/furya/x/rollapp/keeper"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 var (

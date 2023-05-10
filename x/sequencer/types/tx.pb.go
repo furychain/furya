@@ -140,8 +140,8 @@ func (m *MsgCreateSequencerResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgCreateSequencerResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgCreateSequencer)(nil), "xblackfury.furya.sequencer.MsgCreateSequencer")
-	proto.RegisterType((*MsgCreateSequencerResponse)(nil), "xblackfury.furya.sequencer.MsgCreateSequencerResponse")
+	proto.RegisterType((*MsgCreateSequencer)(nil), "furychain.furya.sequencer.MsgCreateSequencer")
+	proto.RegisterType((*MsgCreateSequencerResponse)(nil), "furychain.furya.sequencer.MsgCreateSequencerResponse")
 }
 
 func init() { proto.RegisterFile("furya/sequencer/tx.proto", fileDescriptor_26d679aa996065f1) }
@@ -198,7 +198,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) CreateSequencer(ctx context.Context, in *MsgCreateSequencer, opts ...grpc.CallOption) (*MsgCreateSequencerResponse, error) {
 	out := new(MsgCreateSequencerResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.sequencer.Msg/CreateSequencer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Msg/CreateSequencer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -232,7 +232,7 @@ func _Msg_CreateSequencer_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.sequencer.Msg/CreateSequencer",
+		FullMethod: "/furychain.furya.sequencer.Msg/CreateSequencer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).CreateSequencer(ctx, req.(*MsgCreateSequencer))
@@ -241,7 +241,7 @@ func _Msg_CreateSequencer_Handler(srv interface{}, ctx context.Context, dec func
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "xblackfury.furya.sequencer.Msg",
+	ServiceName: "furychain.furya.sequencer.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

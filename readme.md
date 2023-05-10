@@ -4,11 +4,11 @@
 
 ## The Settlement Layer of the Furya protocol
 
-![license](https://img.shields.io/github/license/xblackfury/furya)
+![license](https://img.shields.io/github/license/furychain/furya)
 ![Go](https://img.shields.io/badge/go-1.18-blue.svg)
-![issues](https://img.shields.io/github/issues/xblackfury/furya)
-![tests](https://github.com/xblackfury/furyint/actions/workflows/test.yml/badge.svg?branch=main)
-![lint](https://github.com/xblackfury/furyint/actions/workflows/lint.yml/badge.svg?branch=main)
+![issues](https://img.shields.io/github/issues/furychain/furya)
+![tests](https://github.com/furychain/furyint/actions/workflows/test.yml/badge.svg?branch=main)
+![lint](https://github.com/furychain/furyint/actions/workflows/lint.yml/badge.svg?branch=main)
 
 ### Step 1: Install Go
 
@@ -19,7 +19,7 @@ Installing Go is a pre-requisite for running a dYmension full node. If you still
 Clone `furya`:
 
 ```sh
-git clone https://github.com/xblackfury/furya.git
+git clone https://github.com/furychain/furya.git
 cd furya
 make install
 ```

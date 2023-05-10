@@ -3,10 +3,10 @@ package sequencer_test
 import (
 	"testing"
 
-	keepertest "github.com/xblackfury/furya/testutil/keeper"
-	"github.com/xblackfury/furya/testutil/nullify"
-	"github.com/xblackfury/furya/x/sequencer"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	keepertest "github.com/furychain/furya/testutil/keeper"
+	"github.com/furychain/furya/testutil/nullify"
+	"github.com/furychain/furya/x/sequencer"
+	"github.com/furychain/furya/x/sequencer/types"
 	"github.com/stretchr/testify/require"
 )
 

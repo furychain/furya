@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/xblackfury/furya/x/rollapp/keeper"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/keeper"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 // NewHandler ...

@@ -3,9 +3,9 @@ package keeper_test
 import (
 	fmt "fmt"
 
-	sharedtypes "github.com/xblackfury/furya/shared/types"
-	"github.com/xblackfury/furya/testutil/sample"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	sharedtypes "github.com/furychain/furya/shared/types"
+	"github.com/furychain/furya/testutil/sample"
+	"github.com/furychain/furya/x/rollapp/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

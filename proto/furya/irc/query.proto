@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package xblackfury.furya.irc;
+package furychain.furya.irc;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -8,24 +8,24 @@ import "cosmos/base/query/v1beta1/pagination.proto";
 import "furya/irc/params.proto";
 import "furya/irc/irc_requests.proto";
 
-option go_package = "github.com/xblackfury/furya/x/irc/types";
+option go_package = "github.com/furychain/furya/x/irc/types";
 
 // Query defines the gRPC querier service.
 service Query {
   
   // Parameters queries the parameters of the module.
   rpc Params (QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/xblackfury/furya/irc/params";
+    option (google.api.http).get = "/furychain/furya/irc/params";
   
   }
   
   // Queries a list of IRCRequest items.
   rpc IRCRequest    (QueryGetIRCRequestRequest) returns (QueryGetIRCRequestResponse) {
-    option (google.api.http).get = "/xblackfury/furya/irc/irc_requests/{reqId}";
+    option (google.api.http).get = "/furychain/furya/irc/irc_requests/{reqId}";
   
   }
   rpc IRCRequestAll (QueryAllIRCRequestRequest) returns (QueryAllIRCRequestResponse) {
-    option (google.api.http).get = "/xblackfury/furya/irc/irc_requests";
+    option (google.api.http).get = "/furychain/furya/irc/irc_requests";
   
   }
 }

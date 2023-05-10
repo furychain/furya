@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/xblackfury/furya/x/sequencer/keeper"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/x/sequencer/keeper"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 // NewHandler ...

@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/xblackfury/furya/shared/types"
-	"github.com/xblackfury/furya/testutil/sample"
+	"github.com/furychain/furya/shared/types"
+	"github.com/furychain/furya/testutil/sample"
 	"github.com/stretchr/testify/require"
 )
 

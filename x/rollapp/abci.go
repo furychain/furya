@@ -6,8 +6,8 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/xblackfury/furya/x/rollapp/keeper"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/keeper"
+	"github.com/furychain/furya/x/rollapp/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

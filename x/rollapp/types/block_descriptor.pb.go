@@ -134,8 +134,8 @@ func (m *BlockDescriptors) GetBD() []BlockDescriptor {
 }
 
 func init() {
-	proto.RegisterType((*BlockDescriptor)(nil), "xblackfury.furya.rollapp.BlockDescriptor")
-	proto.RegisterType((*BlockDescriptors)(nil), "xblackfury.furya.rollapp.BlockDescriptors")
+	proto.RegisterType((*BlockDescriptor)(nil), "furychain.furya.rollapp.BlockDescriptor")
+	proto.RegisterType((*BlockDescriptors)(nil), "furychain.furya.rollapp.BlockDescriptors")
 }
 
 func init() {

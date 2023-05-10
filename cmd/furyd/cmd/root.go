@@ -32,9 +32,9 @@ import (
 
 	// this line is used by starport scaffolding # root/moduleImport
 
-	"github.com/xblackfury/furya/app"
+	"github.com/furychain/furya/app"
 
-	appparams "github.com/xblackfury/furya/app/params"
+	appparams "github.com/furychain/furya/app/params"
 )
 
 // NewRootCmd creates a new root command for a Cosmos SDK application

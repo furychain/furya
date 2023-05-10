@@ -14,7 +14,7 @@ import (
 	"github.com/cosmos/ibc-go/v3/modules/core/exported"
 	ibcdmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/01-furyint/types"
 
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 var _ ibc.IBCMsgI = Keeper{}

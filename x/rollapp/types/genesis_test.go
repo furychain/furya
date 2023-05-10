@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	"github.com/xblackfury/furya/testutil/sample"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/testutil/sample"
+	"github.com/furychain/furya/x/rollapp/types"
 	"github.com/stretchr/testify/require"
 )
 

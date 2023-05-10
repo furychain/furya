@@ -3,7 +3,7 @@ package cmd
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/xblackfury/furya/app"
+	"github.com/furychain/furya/app"
 )
 
 func initSDKConfig() {

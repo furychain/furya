@@ -1,9 +1,9 @@
 syntax = "proto3";
-package xblackfury.furya.sequencer;
+package furychain.furya.sequencer;
 import "gogoproto/gogo.proto";
 
 
-option go_package = "github.com/xblackfury/furya/x/sequencer/types";
+option go_package = "github.com/furychain/furya/x/sequencer/types";
 
 // OperatingStatus defines the operating status of a sequencer
 enum OperatingStatus {

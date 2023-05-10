@@ -3,7 +3,7 @@ package types
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/xblackfury/furya/shared/types"
+	"github.com/furychain/furya/shared/types"
 )
 
 const TypeMsgCreateRollapp = "create_rollapp"

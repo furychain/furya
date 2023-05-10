@@ -27,7 +27,7 @@ type Scheduler struct {
 	// sequencerAddress is the bech32-encoded address of the sequencer account, identifying the sequencer
 	SequencerAddress string `protobuf:"bytes,1,opt,name=sequencerAddress,proto3" json:"sequencerAddress,omitempty"`
 	// status is the operating status of this sequencer
-	Status OperatingStatus `protobuf:"varint,2,opt,name=status,proto3,enum=xblackfury.furya.sequencer.OperatingStatus" json:"status,omitempty"`
+	Status OperatingStatus `protobuf:"varint,2,opt,name=status,proto3,enum=furychain.furya.sequencer.OperatingStatus" json:"status,omitempty"`
 }
 
 func (m *Scheduler) Reset()         { *m = Scheduler{} }
@@ -78,7 +78,7 @@ func (m *Scheduler) GetStatus() OperatingStatus {
 }
 
 func init() {
-	proto.RegisterType((*Scheduler)(nil), "xblackfury.furya.sequencer.Scheduler")
+	proto.RegisterType((*Scheduler)(nil), "furychain.furya.sequencer.Scheduler")
 }
 
 func init() {

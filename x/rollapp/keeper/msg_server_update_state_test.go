@@ -3,9 +3,9 @@ package keeper_test
 import (
 	"strconv"
 
-	sharedtypes "github.com/xblackfury/furya/shared/types"
-	"github.com/xblackfury/furya/x/rollapp/types"
-	sequencertypes "github.com/xblackfury/furya/x/sequencer/types"
+	sharedtypes "github.com/furychain/furya/shared/types"
+	"github.com/furychain/furya/x/rollapp/types"
+	sequencertypes "github.com/furychain/furya/x/sequencer/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

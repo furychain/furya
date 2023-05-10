@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/simapp"
 	simulationtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/xblackfury/furya/app"
+	"github.com/furychain/furya/app"
 	"github.com/stretchr/testify/require"
 )
 

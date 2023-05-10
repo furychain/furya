@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/xblackfury/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/rollapp/types"
 )
 
 type msgServer struct {

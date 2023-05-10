@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 type msgServer struct {

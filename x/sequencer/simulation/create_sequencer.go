@@ -6,10 +6,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/xblackfury/furya/simulation"
-	simulationtypes "github.com/xblackfury/furya/simulation/types"
-	"github.com/xblackfury/furya/x/sequencer/keeper"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/simulation"
+	simulationtypes "github.com/furychain/furya/simulation/types"
+	"github.com/furychain/furya/x/sequencer/keeper"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 func SimulateMsgCreateSequencer(

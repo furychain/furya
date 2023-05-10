@@ -60,7 +60,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "xblackfury.furya.sequencer.Params")
+	proto.RegisterType((*Params)(nil), "furychain.furya.sequencer.Params")
 }
 
 func init() { proto.RegisterFile("furya/sequencer/params.proto", fileDescriptor_d06545e8924ecfea) }

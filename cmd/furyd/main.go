@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"github.com/xblackfury/furya/app"
-	"github.com/xblackfury/furya/cmd/furyd/cmd"
+	"github.com/furychain/furya/app"
+	"github.com/furychain/furya/cmd/furyd/cmd"
 )
 
 func main() {

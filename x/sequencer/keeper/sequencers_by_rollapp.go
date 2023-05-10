@@ -3,7 +3,7 @@ package keeper
 import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 // SetSequencersByRollapp set a specific sequencersByRollapp in the store from its index

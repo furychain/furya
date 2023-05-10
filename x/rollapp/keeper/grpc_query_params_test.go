@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	testkeeper "github.com/xblackfury/furya/testutil/keeper"
-	"github.com/xblackfury/furya/testutil/sample"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	testkeeper "github.com/furychain/furya/testutil/keeper"
+	"github.com/furychain/furya/testutil/sample"
+	"github.com/furychain/furya/x/rollapp/types"
 	"github.com/stretchr/testify/require"
 )
 

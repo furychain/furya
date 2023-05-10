@@ -6,10 +6,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	keepertest "github.com/xblackfury/furya/testutil/keeper"
-	"github.com/xblackfury/furya/testutil/nullify"
-	"github.com/xblackfury/furya/x/irc/keeper"
-	"github.com/xblackfury/furya/x/irc/types"
+	keepertest "github.com/furychain/furya/testutil/keeper"
+	"github.com/furychain/furya/testutil/nullify"
+	"github.com/furychain/furya/x/irc/keeper"
+	"github.com/furychain/furya/x/irc/types"
 	"github.com/stretchr/testify/require"
 
 	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"

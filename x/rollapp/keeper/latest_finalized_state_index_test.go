@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/xblackfury/furya/testutil/keeper"
-	"github.com/xblackfury/furya/testutil/nullify"
-	"github.com/xblackfury/furya/x/rollapp/keeper"
-	"github.com/xblackfury/furya/x/rollapp/types"
+	keepertest "github.com/furychain/furya/testutil/keeper"
+	"github.com/furychain/furya/testutil/nullify"
+	"github.com/furychain/furya/x/rollapp/keeper"
+	"github.com/furychain/furya/x/rollapp/types"
 	"github.com/stretchr/testify/require"
 )
 

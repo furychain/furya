@@ -16,9 +16,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/xblackfury/furya/x/sequencer/client/cli"
-	"github.com/xblackfury/furya/x/sequencer/keeper"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/x/sequencer/client/cli"
+	"github.com/furychain/furya/x/sequencer/keeper"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 var (

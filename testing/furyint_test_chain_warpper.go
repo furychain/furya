@@ -8,7 +8,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	rollapptypes "github.com/xblackfury/furya/x/rollapp/types"
+	rollapptypes "github.com/furychain/furya/x/rollapp/types"
 )
 
 var (

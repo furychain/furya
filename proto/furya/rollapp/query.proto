@@ -1,5 +1,5 @@
 syntax = "proto3";
-package xblackfury.furya.rollapp;
+package furychain.furya.rollapp;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
@@ -9,62 +9,62 @@ import "furya/rollapp/rollapp.proto";
 // this line is used by starport scaffolding # 1
 import "furya/rollapp/state_info.proto";
 
-option go_package = "github.com/xblackfury/furya/x/rollapp/types";
+option go_package = "github.com/furychain/furya/x/rollapp/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/xblackfury/furya/rollapp/params";
+    option (google.api.http).get = "/furychain/furya/rollapp/params";
   }
   // Queries a Rollapp by index.
 	rpc Rollapp(QueryGetRollappRequest) returns (QueryGetRollappResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/rollapp/{rollappId}";
+		option (google.api.http).get = "/furychain/furya/rollapp/rollapp/{rollappId}";
 	}
 
 	// Queries a list of Rollapp items.
 	rpc RollappAll(QueryAllRollappRequest) returns (QueryAllRollappResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/rollapp";
+		option (google.api.http).get = "/furychain/furya/rollapp/rollapp";
 	}
 
 	// Queries a StateInfo by index.
 	rpc StateInfo(QueryGetStateInfoRequest) returns (QueryGetStateInfoResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/state_info/{rollappId}/{index}";
+		option (google.api.http).get = "/furychain/furya/rollapp/state_info/{rollappId}/{index}";
 	}
 
 	// Queries a list of StateInfo items.
 	rpc StateInfoAll(QueryAllStateInfoRequest) returns (QueryAllStateInfoResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/state_info";
+		option (google.api.http).get = "/furychain/furya/rollapp/state_info";
 	}
 
 	// Queries a LatestStateInfoIndex by index.
 	rpc LatestStateInfoIndex(QueryGetLatestStateInfoIndexRequest) returns (QueryGetLatestStateInfoIndexResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/latest_state_info_index/{rollappId}";
+		option (google.api.http).get = "/furychain/furya/rollapp/latest_state_info_index/{rollappId}";
 	}
 
 	// Queries a list of LatestStateInfoIndex items.
 	rpc LatestStateInfoIndexAll(QueryAllLatestStateInfoIndexRequest) returns (QueryAllLatestStateInfoIndexResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/latest_state_info_index";
+		option (google.api.http).get = "/furychain/furya/rollapp/latest_state_info_index";
 	}
 
 	// Queries a BlockHeightToFinalizationQueue by index.
 	rpc BlockHeightToFinalizationQueue(QueryGetBlockHeightToFinalizationQueueRequest) returns (QueryGetBlockHeightToFinalizationQueueResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/block_height_to_finalization_queue/{finalizationHeight}";
+		option (google.api.http).get = "/furychain/furya/rollapp/block_height_to_finalization_queue/{finalizationHeight}";
 	}
 
 	// Queries a list of BlockHeightToFinalizationQueue items.
 	rpc BlockHeightToFinalizationQueueAll(QueryAllBlockHeightToFinalizationQueueRequest) returns (QueryAllBlockHeightToFinalizationQueueResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/block_height_to_finalization_queue";
+		option (google.api.http).get = "/furychain/furya/rollapp/block_height_to_finalization_queue";
 	}
 
 	// Queries a list of LatestFinalizedStateInfo items.
 	rpc LatestFinalizedStateInfo(QueryGetLatestFinalizedStateInfoRequest) returns (QueryGetLatestFinalizedStateInfoResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/latest_finalized_state_info/{rollappId}";
+		option (google.api.http).get = "/furychain/furya/rollapp/latest_finalized_state_info/{rollappId}";
 	}
 
 // Queries a list of GetStateInfoByHeight items.
 	rpc GetStateInfoByHeight(QueryGetStateInfoByHeightRequest) returns (QueryGetStateInfoByHeightResponse) {
-		option (google.api.http).get = "/xblackfury/furya/rollapp/get_state_info_by_height/{rollappId}/{height}";
+		option (google.api.http).get = "/furychain/furya/rollapp/get_state_info_by_height/{rollappId}/{height}";
 	}
 
 // this line is used by starport scaffolding # 2

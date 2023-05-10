@@ -1062,28 +1062,28 @@ func (m *QueryGetStateInfoByHeightResponse) GetStateInfo() StateInfo {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "xblackfury.furya.rollapp.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "xblackfury.furya.rollapp.QueryParamsResponse")
-	proto.RegisterType((*QueryGetRollappRequest)(nil), "xblackfury.furya.rollapp.QueryGetRollappRequest")
-	proto.RegisterType((*QueryGetRollappResponse)(nil), "xblackfury.furya.rollapp.QueryGetRollappResponse")
-	proto.RegisterType((*QueryAllRollappRequest)(nil), "xblackfury.furya.rollapp.QueryAllRollappRequest")
-	proto.RegisterType((*QueryAllRollappResponse)(nil), "xblackfury.furya.rollapp.QueryAllRollappResponse")
-	proto.RegisterType((*QueryGetStateInfoRequest)(nil), "xblackfury.furya.rollapp.QueryGetStateInfoRequest")
-	proto.RegisterType((*QueryGetStateInfoResponse)(nil), "xblackfury.furya.rollapp.QueryGetStateInfoResponse")
-	proto.RegisterType((*QueryAllStateInfoRequest)(nil), "xblackfury.furya.rollapp.QueryAllStateInfoRequest")
-	proto.RegisterType((*QueryAllStateInfoResponse)(nil), "xblackfury.furya.rollapp.QueryAllStateInfoResponse")
-	proto.RegisterType((*QueryGetLatestStateInfoIndexRequest)(nil), "xblackfury.furya.rollapp.QueryGetLatestStateInfoIndexRequest")
-	proto.RegisterType((*QueryGetLatestStateInfoIndexResponse)(nil), "xblackfury.furya.rollapp.QueryGetLatestStateInfoIndexResponse")
-	proto.RegisterType((*QueryAllLatestStateInfoIndexRequest)(nil), "xblackfury.furya.rollapp.QueryAllLatestStateInfoIndexRequest")
-	proto.RegisterType((*QueryAllLatestStateInfoIndexResponse)(nil), "xblackfury.furya.rollapp.QueryAllLatestStateInfoIndexResponse")
-	proto.RegisterType((*QueryGetBlockHeightToFinalizationQueueRequest)(nil), "xblackfury.furya.rollapp.QueryGetBlockHeightToFinalizationQueueRequest")
-	proto.RegisterType((*QueryGetBlockHeightToFinalizationQueueResponse)(nil), "xblackfury.furya.rollapp.QueryGetBlockHeightToFinalizationQueueResponse")
-	proto.RegisterType((*QueryAllBlockHeightToFinalizationQueueRequest)(nil), "xblackfury.furya.rollapp.QueryAllBlockHeightToFinalizationQueueRequest")
-	proto.RegisterType((*QueryAllBlockHeightToFinalizationQueueResponse)(nil), "xblackfury.furya.rollapp.QueryAllBlockHeightToFinalizationQueueResponse")
-	proto.RegisterType((*QueryGetLatestFinalizedStateInfoRequest)(nil), "xblackfury.furya.rollapp.QueryGetLatestFinalizedStateInfoRequest")
-	proto.RegisterType((*QueryGetLatestFinalizedStateInfoResponse)(nil), "xblackfury.furya.rollapp.QueryGetLatestFinalizedStateInfoResponse")
-	proto.RegisterType((*QueryGetStateInfoByHeightRequest)(nil), "xblackfury.furya.rollapp.QueryGetStateInfoByHeightRequest")
-	proto.RegisterType((*QueryGetStateInfoByHeightResponse)(nil), "xblackfury.furya.rollapp.QueryGetStateInfoByHeightResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "furychain.furya.rollapp.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "furychain.furya.rollapp.QueryParamsResponse")
+	proto.RegisterType((*QueryGetRollappRequest)(nil), "furychain.furya.rollapp.QueryGetRollappRequest")
+	proto.RegisterType((*QueryGetRollappResponse)(nil), "furychain.furya.rollapp.QueryGetRollappResponse")
+	proto.RegisterType((*QueryAllRollappRequest)(nil), "furychain.furya.rollapp.QueryAllRollappRequest")
+	proto.RegisterType((*QueryAllRollappResponse)(nil), "furychain.furya.rollapp.QueryAllRollappResponse")
+	proto.RegisterType((*QueryGetStateInfoRequest)(nil), "furychain.furya.rollapp.QueryGetStateInfoRequest")
+	proto.RegisterType((*QueryGetStateInfoResponse)(nil), "furychain.furya.rollapp.QueryGetStateInfoResponse")
+	proto.RegisterType((*QueryAllStateInfoRequest)(nil), "furychain.furya.rollapp.QueryAllStateInfoRequest")
+	proto.RegisterType((*QueryAllStateInfoResponse)(nil), "furychain.furya.rollapp.QueryAllStateInfoResponse")
+	proto.RegisterType((*QueryGetLatestStateInfoIndexRequest)(nil), "furychain.furya.rollapp.QueryGetLatestStateInfoIndexRequest")
+	proto.RegisterType((*QueryGetLatestStateInfoIndexResponse)(nil), "furychain.furya.rollapp.QueryGetLatestStateInfoIndexResponse")
+	proto.RegisterType((*QueryAllLatestStateInfoIndexRequest)(nil), "furychain.furya.rollapp.QueryAllLatestStateInfoIndexRequest")
+	proto.RegisterType((*QueryAllLatestStateInfoIndexResponse)(nil), "furychain.furya.rollapp.QueryAllLatestStateInfoIndexResponse")
+	proto.RegisterType((*QueryGetBlockHeightToFinalizationQueueRequest)(nil), "furychain.furya.rollapp.QueryGetBlockHeightToFinalizationQueueRequest")
+	proto.RegisterType((*QueryGetBlockHeightToFinalizationQueueResponse)(nil), "furychain.furya.rollapp.QueryGetBlockHeightToFinalizationQueueResponse")
+	proto.RegisterType((*QueryAllBlockHeightToFinalizationQueueRequest)(nil), "furychain.furya.rollapp.QueryAllBlockHeightToFinalizationQueueRequest")
+	proto.RegisterType((*QueryAllBlockHeightToFinalizationQueueResponse)(nil), "furychain.furya.rollapp.QueryAllBlockHeightToFinalizationQueueResponse")
+	proto.RegisterType((*QueryGetLatestFinalizedStateInfoRequest)(nil), "furychain.furya.rollapp.QueryGetLatestFinalizedStateInfoRequest")
+	proto.RegisterType((*QueryGetLatestFinalizedStateInfoResponse)(nil), "furychain.furya.rollapp.QueryGetLatestFinalizedStateInfoResponse")
+	proto.RegisterType((*QueryGetStateInfoByHeightRequest)(nil), "furychain.furya.rollapp.QueryGetStateInfoByHeightRequest")
+	proto.RegisterType((*QueryGetStateInfoByHeightResponse)(nil), "furychain.furya.rollapp.QueryGetStateInfoByHeightResponse")
 }
 
 func init() { proto.RegisterFile("furya/rollapp/query.proto", fileDescriptor_6816c5236b322a4f) }
@@ -1207,7 +1207,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1216,7 +1216,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) Rollapp(ctx context.Context, in *QueryGetRollappRequest, opts ...grpc.CallOption) (*QueryGetRollappResponse, error) {
 	out := new(QueryGetRollappResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/Rollapp", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/Rollapp", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1225,7 +1225,7 @@ func (c *queryClient) Rollapp(ctx context.Context, in *QueryGetRollappRequest, o
 
 func (c *queryClient) RollappAll(ctx context.Context, in *QueryAllRollappRequest, opts ...grpc.CallOption) (*QueryAllRollappResponse, error) {
 	out := new(QueryAllRollappResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/RollappAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/RollappAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1234,7 +1234,7 @@ func (c *queryClient) RollappAll(ctx context.Context, in *QueryAllRollappRequest
 
 func (c *queryClient) StateInfo(ctx context.Context, in *QueryGetStateInfoRequest, opts ...grpc.CallOption) (*QueryGetStateInfoResponse, error) {
 	out := new(QueryGetStateInfoResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/StateInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/StateInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1243,7 +1243,7 @@ func (c *queryClient) StateInfo(ctx context.Context, in *QueryGetStateInfoReques
 
 func (c *queryClient) StateInfoAll(ctx context.Context, in *QueryAllStateInfoRequest, opts ...grpc.CallOption) (*QueryAllStateInfoResponse, error) {
 	out := new(QueryAllStateInfoResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/StateInfoAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/StateInfoAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1252,7 +1252,7 @@ func (c *queryClient) StateInfoAll(ctx context.Context, in *QueryAllStateInfoReq
 
 func (c *queryClient) LatestStateInfoIndex(ctx context.Context, in *QueryGetLatestStateInfoIndexRequest, opts ...grpc.CallOption) (*QueryGetLatestStateInfoIndexResponse, error) {
 	out := new(QueryGetLatestStateInfoIndexResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/LatestStateInfoIndex", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/LatestStateInfoIndex", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1261,7 +1261,7 @@ func (c *queryClient) LatestStateInfoIndex(ctx context.Context, in *QueryGetLate
 
 func (c *queryClient) LatestStateInfoIndexAll(ctx context.Context, in *QueryAllLatestStateInfoIndexRequest, opts ...grpc.CallOption) (*QueryAllLatestStateInfoIndexResponse, error) {
 	out := new(QueryAllLatestStateInfoIndexResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/LatestStateInfoIndexAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/LatestStateInfoIndexAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1270,7 +1270,7 @@ func (c *queryClient) LatestStateInfoIndexAll(ctx context.Context, in *QueryAllL
 
 func (c *queryClient) BlockHeightToFinalizationQueue(ctx context.Context, in *QueryGetBlockHeightToFinalizationQueueRequest, opts ...grpc.CallOption) (*QueryGetBlockHeightToFinalizationQueueResponse, error) {
 	out := new(QueryGetBlockHeightToFinalizationQueueResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/BlockHeightToFinalizationQueue", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/BlockHeightToFinalizationQueue", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1279,7 +1279,7 @@ func (c *queryClient) BlockHeightToFinalizationQueue(ctx context.Context, in *Qu
 
 func (c *queryClient) BlockHeightToFinalizationQueueAll(ctx context.Context, in *QueryAllBlockHeightToFinalizationQueueRequest, opts ...grpc.CallOption) (*QueryAllBlockHeightToFinalizationQueueResponse, error) {
 	out := new(QueryAllBlockHeightToFinalizationQueueResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/BlockHeightToFinalizationQueueAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/BlockHeightToFinalizationQueueAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1288,7 +1288,7 @@ func (c *queryClient) BlockHeightToFinalizationQueueAll(ctx context.Context, in 
 
 func (c *queryClient) LatestFinalizedStateInfo(ctx context.Context, in *QueryGetLatestFinalizedStateInfoRequest, opts ...grpc.CallOption) (*QueryGetLatestFinalizedStateInfoResponse, error) {
 	out := new(QueryGetLatestFinalizedStateInfoResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/LatestFinalizedStateInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/LatestFinalizedStateInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1297,7 +1297,7 @@ func (c *queryClient) LatestFinalizedStateInfo(ctx context.Context, in *QueryGet
 
 func (c *queryClient) GetStateInfoByHeight(ctx context.Context, in *QueryGetStateInfoByHeightRequest, opts ...grpc.CallOption) (*QueryGetStateInfoByHeightResponse, error) {
 	out := new(QueryGetStateInfoByHeightResponse)
-	err := c.cc.Invoke(ctx, "/xblackfury.furya.rollapp.Query/GetStateInfoByHeight", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Query/GetStateInfoByHeight", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1382,7 +1382,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/Params",
+		FullMethod: "/furychain.furya.rollapp.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -1400,7 +1400,7 @@ func _Query_Rollapp_Handler(srv interface{}, ctx context.Context, dec func(inter
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/Rollapp",
+		FullMethod: "/furychain.furya.rollapp.Query/Rollapp",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Rollapp(ctx, req.(*QueryGetRollappRequest))
@@ -1418,7 +1418,7 @@ func _Query_RollappAll_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/RollappAll",
+		FullMethod: "/furychain.furya.rollapp.Query/RollappAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).RollappAll(ctx, req.(*QueryAllRollappRequest))
@@ -1436,7 +1436,7 @@ func _Query_StateInfo_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/StateInfo",
+		FullMethod: "/furychain.furya.rollapp.Query/StateInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StateInfo(ctx, req.(*QueryGetStateInfoRequest))
@@ -1454,7 +1454,7 @@ func _Query_StateInfoAll_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/StateInfoAll",
+		FullMethod: "/furychain.furya.rollapp.Query/StateInfoAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StateInfoAll(ctx, req.(*QueryAllStateInfoRequest))
@@ -1472,7 +1472,7 @@ func _Query_LatestStateInfoIndex_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/LatestStateInfoIndex",
+		FullMethod: "/furychain.furya.rollapp.Query/LatestStateInfoIndex",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).LatestStateInfoIndex(ctx, req.(*QueryGetLatestStateInfoIndexRequest))
@@ -1490,7 +1490,7 @@ func _Query_LatestStateInfoIndexAll_Handler(srv interface{}, ctx context.Context
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/LatestStateInfoIndexAll",
+		FullMethod: "/furychain.furya.rollapp.Query/LatestStateInfoIndexAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).LatestStateInfoIndexAll(ctx, req.(*QueryAllLatestStateInfoIndexRequest))
@@ -1508,7 +1508,7 @@ func _Query_BlockHeightToFinalizationQueue_Handler(srv interface{}, ctx context.
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/BlockHeightToFinalizationQueue",
+		FullMethod: "/furychain.furya.rollapp.Query/BlockHeightToFinalizationQueue",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).BlockHeightToFinalizationQueue(ctx, req.(*QueryGetBlockHeightToFinalizationQueueRequest))
@@ -1526,7 +1526,7 @@ func _Query_BlockHeightToFinalizationQueueAll_Handler(srv interface{}, ctx conte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/BlockHeightToFinalizationQueueAll",
+		FullMethod: "/furychain.furya.rollapp.Query/BlockHeightToFinalizationQueueAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).BlockHeightToFinalizationQueueAll(ctx, req.(*QueryAllBlockHeightToFinalizationQueueRequest))
@@ -1544,7 +1544,7 @@ func _Query_LatestFinalizedStateInfo_Handler(srv interface{}, ctx context.Contex
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/LatestFinalizedStateInfo",
+		FullMethod: "/furychain.furya.rollapp.Query/LatestFinalizedStateInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).LatestFinalizedStateInfo(ctx, req.(*QueryGetLatestFinalizedStateInfoRequest))
@@ -1562,7 +1562,7 @@ func _Query_GetStateInfoByHeight_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/xblackfury.furya.rollapp.Query/GetStateInfoByHeight",
+		FullMethod: "/furychain.furya.rollapp.Query/GetStateInfoByHeight",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetStateInfoByHeight(ctx, req.(*QueryGetStateInfoByHeightRequest))
@@ -1571,7 +1571,7 @@ func _Query_GetStateInfoByHeight_Handler(srv interface{}, ctx context.Context, d
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "xblackfury.furya.rollapp.Query",
+	ServiceName: "furychain.furya.rollapp.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

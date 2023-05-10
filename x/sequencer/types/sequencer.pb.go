@@ -100,7 +100,7 @@ func (m *Sequencer) GetDescription() Description {
 }
 
 func init() {
-	proto.RegisterType((*Sequencer)(nil), "xblackfury.furya.sequencer.Sequencer")
+	proto.RegisterType((*Sequencer)(nil), "furychain.furya.sequencer.Sequencer")
 }
 
 func init() {

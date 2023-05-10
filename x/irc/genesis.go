@@ -2,8 +2,8 @@ package irc
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/xblackfury/furya/x/irc/keeper"
-	"github.com/xblackfury/furya/x/irc/types"
+	"github.com/furychain/furya/x/irc/keeper"
+	"github.com/furychain/furya/x/irc/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.

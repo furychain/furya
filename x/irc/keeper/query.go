@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/xblackfury/furya/x/irc/types"
+	"github.com/furychain/furya/x/irc/types"
 )
 
 var _ types.QueryServer = Keeper{}

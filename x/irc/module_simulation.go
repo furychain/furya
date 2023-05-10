@@ -9,9 +9,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/xblackfury/furya/testutil/sample"
-	ircsimulation "github.com/xblackfury/furya/x/irc/simulation"
-	"github.com/xblackfury/furya/x/irc/types"
+	"github.com/furychain/furya/testutil/sample"
+	ircsimulation "github.com/furychain/furya/x/irc/simulation"
+	"github.com/furychain/furya/x/irc/types"
 )
 
 // avoid unused import issue

@@ -9,7 +9,7 @@ import (
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/xblackfury/furya/x/irc/types"
+	"github.com/furychain/furya/x/irc/types"
 )
 
 type (

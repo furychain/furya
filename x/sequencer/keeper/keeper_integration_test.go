@@ -6,14 +6,14 @@ import (
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 
-	furyaapp "github.com/xblackfury/furya/app"
-	sharedtypes "github.com/xblackfury/furya/shared/types"
-	"github.com/xblackfury/furya/testutil/sample"
-	"github.com/xblackfury/furya/x/sequencer/keeper"
-	"github.com/xblackfury/furya/x/sequencer/types"
-	sequencertypes "github.com/xblackfury/furya/x/sequencer/types"
+	furyaapp "github.com/furychain/furya/app"
+	sharedtypes "github.com/furychain/furya/shared/types"
+	"github.com/furychain/furya/testutil/sample"
+	"github.com/furychain/furya/x/sequencer/keeper"
+	"github.com/furychain/furya/x/sequencer/types"
+	sequencertypes "github.com/furychain/furya/x/sequencer/types"
 
-	rollapptypes "github.com/xblackfury/furya/x/rollapp/types"
+	rollapptypes "github.com/furychain/furya/x/rollapp/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"

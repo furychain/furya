@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/x/sequencer/types"
 	"github.com/stretchr/testify/require"
 )
 

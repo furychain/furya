@@ -9,9 +9,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/xblackfury/furya/testutil/sample"
-	sequencersimulation "github.com/xblackfury/furya/x/sequencer/simulation"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/testutil/sample"
+	sequencersimulation "github.com/furychain/furya/x/sequencer/simulation"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 // avoid unused import issue

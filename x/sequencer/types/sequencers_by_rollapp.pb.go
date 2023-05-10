@@ -5,7 +5,7 @@ package types
 
 import (
 	fmt "fmt"
-	types "github.com/xblackfury/furya/shared/types"
+	types "github.com/furychain/furya/shared/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"
@@ -82,7 +82,7 @@ func (m *SequencersByRollapp) GetSequencers() types.Sequencers {
 }
 
 func init() {
-	proto.RegisterType((*SequencersByRollapp)(nil), "xblackfury.furya.sequencer.SequencersByRollapp")
+	proto.RegisterType((*SequencersByRollapp)(nil), "furychain.furya.sequencer.SequencersByRollapp")
 }
 
 func init() {

@@ -1,7 +1,7 @@
 syntax = "proto3";
-package xblackfury.furya.sequencer;
+package furychain.furya.sequencer;
 
-option go_package = "github.com/xblackfury/furya/x/sequencer/types";
+option go_package = "github.com/furychain/furya/x/sequencer/types";
 import "furya/sequencer/operating_status.proto"; 
 
 // Scheduler defines the operating status of a sequencer

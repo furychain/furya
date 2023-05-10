@@ -77,7 +77,7 @@ func (m *GenesisState) GetIRCRequestList() []IRCRequest {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "xblackfury.furya.irc.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "furychain.furya.irc.GenesisState")
 }
 
 func init() { proto.RegisterFile("furya/irc/genesis.proto", fileDescriptor_b22ab0a0f43858c9) }

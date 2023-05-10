@@ -3,7 +3,7 @@ package keeper
 import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/xblackfury/furya/x/irc/types"
+	"github.com/furychain/furya/x/irc/types"
 )
 
 // SetIRCRequest set a specific ircRequest in the store from its index

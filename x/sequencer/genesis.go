@@ -2,8 +2,8 @@ package sequencer
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/xblackfury/furya/x/sequencer/keeper"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	"github.com/furychain/furya/x/sequencer/keeper"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

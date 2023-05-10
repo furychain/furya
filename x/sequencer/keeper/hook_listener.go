@@ -3,8 +3,8 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	rollapptypes "github.com/xblackfury/furya/x/rollapp/types"
-	"github.com/xblackfury/furya/x/sequencer/types"
+	rollapptypes "github.com/furychain/furya/x/rollapp/types"
+	"github.com/furychain/furya/x/sequencer/types"
 )
 
 var _ rollapptypes.RollappHooks = rollapphook{}
