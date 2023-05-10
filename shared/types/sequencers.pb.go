@@ -68,7 +68,7 @@ func (m *Sequencers) GetAddresses() []string {
 }
 
 func init() {
-	proto.RegisterType((*Sequencers)(nil), "furyaxyz.furya.shared.Sequencers")
+	proto.RegisterType((*Sequencers)(nil), "furychain.furya.shared.Sequencers")
 }
 
 func init() { proto.RegisterFile("furya/shared/sequencers.proto", fileDescriptor_158b57dbfae0ceeb) }

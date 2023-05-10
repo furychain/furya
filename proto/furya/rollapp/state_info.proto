@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furyaxyz.furya.rollapp;
+package furychain.furya.rollapp;
 
 option go_package = "github.com/furychain/furya/x/rollapp/types";
 

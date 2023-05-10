@@ -93,7 +93,7 @@ func (m *GenesisState) GetSchedulerList() []Scheduler {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "furyaxyz.furya.sequencer.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "furychain.furya.sequencer.GenesisState")
 }
 
 func init() { proto.RegisterFile("furya/sequencer/genesis.proto", fileDescriptor_52f5d9dc91070770) }

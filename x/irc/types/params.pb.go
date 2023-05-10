@@ -60,7 +60,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "furyaxyz.furya.irc.Params")
+	proto.RegisterType((*Params)(nil), "furychain.furya.irc.Params")
 }
 
 func init() { proto.RegisterFile("furya/irc/params.proto", fileDescriptor_aea8058c144247e6) }

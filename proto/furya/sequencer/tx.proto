@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furyaxyz.furya.sequencer;
+package furychain.furya.sequencer;
 
 // this line is used by starport scaffolding # proto/tx/import
 import "furya/sequencer/description.proto";

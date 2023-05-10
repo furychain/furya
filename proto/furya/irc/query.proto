@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package furyaxyz.furya.irc;
+package furychain.furya.irc;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";

@@ -72,7 +72,7 @@ func RegisterMsgServer(s grpc1.Server, srv MsgServer) {
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "furyaxyz.furya.irc.Msg",
+	ServiceName: "furychain.furya.irc.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams:     []grpc.StreamDesc{},

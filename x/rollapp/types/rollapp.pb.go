@@ -140,7 +140,7 @@ func (m *Rollapp) GetPermissionedAddresses() types.Sequencers {
 }
 
 func init() {
-	proto.RegisterType((*Rollapp)(nil), "furyaxyz.furya.rollapp.Rollapp")
+	proto.RegisterType((*Rollapp)(nil), "furychain.furya.rollapp.Rollapp")
 }
 
 func init() { proto.RegisterFile("furya/rollapp/rollapp.proto", fileDescriptor_2c072320fdc0abd9) }

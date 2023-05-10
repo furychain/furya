@@ -12,7 +12,7 @@ CHAIN_ID=${CHAIN_ID:-""}
 MONIKER_NAME=${MONIKER_NAME:-""}
 TOKEN=${TOKEN:-""}
 STATE_SYNC=${STATE_SYNC:-false}
-CHAIN_REPO=https://$([ -z "$TOKEN" ] && echo "" || echo "$TOKEN@")raw.githubusercontent.com/furyaxyz/networks/main
+CHAIN_REPO=https://$([ -z "$TOKEN" ] && echo "" || echo "$TOKEN@")raw.githubusercontent.com/furychain/networks/main
 
 if [ -z "$CHAIN_ID" ]; then
   echo "Missing CHAIN_ID."

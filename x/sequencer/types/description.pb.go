@@ -105,7 +105,7 @@ func (m *Description) GetDetails() string {
 }
 
 func init() {
-	proto.RegisterType((*Description)(nil), "furyaxyz.furya.sequencer.Description")
+	proto.RegisterType((*Description)(nil), "furychain.furya.sequencer.Description")
 }
 
 func init() {

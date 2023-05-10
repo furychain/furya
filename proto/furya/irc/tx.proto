@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furyaxyz.furya.irc;
+package furychain.furya.irc;
 
 option go_package = "github.com/furychain/furya/x/irc/types";
 

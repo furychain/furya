@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furyaxyz.furya.sequencer;
+package furychain.furya.sequencer;
 import "gogoproto/gogo.proto";
 
 

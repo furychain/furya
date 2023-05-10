@@ -310,10 +310,10 @@ func (m *MsgUpdateStateResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgUpdateStateResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgCreateRollapp)(nil), "furyaxyz.furya.rollapp.MsgCreateRollapp")
-	proto.RegisterType((*MsgCreateRollappResponse)(nil), "furyaxyz.furya.rollapp.MsgCreateRollappResponse")
-	proto.RegisterType((*MsgUpdateState)(nil), "furyaxyz.furya.rollapp.MsgUpdateState")
-	proto.RegisterType((*MsgUpdateStateResponse)(nil), "furyaxyz.furya.rollapp.MsgUpdateStateResponse")
+	proto.RegisterType((*MsgCreateRollapp)(nil), "furychain.furya.rollapp.MsgCreateRollapp")
+	proto.RegisterType((*MsgCreateRollappResponse)(nil), "furychain.furya.rollapp.MsgCreateRollappResponse")
+	proto.RegisterType((*MsgUpdateState)(nil), "furychain.furya.rollapp.MsgUpdateState")
+	proto.RegisterType((*MsgUpdateStateResponse)(nil), "furychain.furya.rollapp.MsgUpdateStateResponse")
 }
 
 func init() { proto.RegisterFile("furya/rollapp/tx.proto", fileDescriptor_935cc363af28220c) }
@@ -380,7 +380,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) CreateRollapp(ctx context.Context, in *MsgCreateRollapp, opts ...grpc.CallOption) (*MsgCreateRollappResponse, error) {
 	out := new(MsgCreateRollappResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.rollapp.Msg/CreateRollapp", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Msg/CreateRollapp", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -389,7 +389,7 @@ func (c *msgClient) CreateRollapp(ctx context.Context, in *MsgCreateRollapp, opt
 
 func (c *msgClient) UpdateState(ctx context.Context, in *MsgUpdateState, opts ...grpc.CallOption) (*MsgUpdateStateResponse, error) {
 	out := new(MsgUpdateStateResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.rollapp.Msg/UpdateState", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.rollapp.Msg/UpdateState", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -427,7 +427,7 @@ func _Msg_CreateRollapp_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.rollapp.Msg/CreateRollapp",
+		FullMethod: "/furychain.furya.rollapp.Msg/CreateRollapp",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).CreateRollapp(ctx, req.(*MsgCreateRollapp))
@@ -445,7 +445,7 @@ func _Msg_UpdateState_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.rollapp.Msg/UpdateState",
+		FullMethod: "/furychain.furya.rollapp.Msg/UpdateState",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateState(ctx, req.(*MsgUpdateState))
@@ -454,7 +454,7 @@ func _Msg_UpdateState_Handler(srv interface{}, ctx context.Context, dec func(int
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "furyaxyz.furya.rollapp.Msg",
+	ServiceName: "furychain.furya.rollapp.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -35,7 +35,7 @@ type SequencerInfo struct {
 	// basic sequencer info
 	Sequencer Sequencer `protobuf:"bytes,1,opt,name=sequencer,proto3" json:"sequencer"`
 	// sequencers' operating status
-	Status OperatingStatus `protobuf:"varint,2,opt,name=status,proto3,enum=furyaxyz.furya.sequencer.OperatingStatus" json:"status,omitempty"`
+	Status OperatingStatus `protobuf:"varint,2,opt,name=status,proto3,enum=furychain.furya.sequencer.OperatingStatus" json:"status,omitempty"`
 }
 
 func (m *SequencerInfo) Reset()         { *m = SequencerInfo{} }
@@ -729,21 +729,21 @@ func (m *QueryAllSchedulerResponse) GetPagination() *query.PageResponse {
 }
 
 func init() {
-	proto.RegisterType((*SequencerInfo)(nil), "furyaxyz.furya.sequencer.SequencerInfo")
-	proto.RegisterType((*QueryParamsRequest)(nil), "furyaxyz.furya.sequencer.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "furyaxyz.furya.sequencer.QueryParamsResponse")
-	proto.RegisterType((*QueryGetSequencerRequest)(nil), "furyaxyz.furya.sequencer.QueryGetSequencerRequest")
-	proto.RegisterType((*QueryGetSequencerResponse)(nil), "furyaxyz.furya.sequencer.QueryGetSequencerResponse")
-	proto.RegisterType((*QueryAllSequencerRequest)(nil), "furyaxyz.furya.sequencer.QueryAllSequencerRequest")
-	proto.RegisterType((*QueryAllSequencerResponse)(nil), "furyaxyz.furya.sequencer.QueryAllSequencerResponse")
-	proto.RegisterType((*QueryGetSequencersByRollappRequest)(nil), "furyaxyz.furya.sequencer.QueryGetSequencersByRollappRequest")
-	proto.RegisterType((*QueryGetSequencersByRollappResponse)(nil), "furyaxyz.furya.sequencer.QueryGetSequencersByRollappResponse")
-	proto.RegisterType((*QueryAllSequencersByRollappRequest)(nil), "furyaxyz.furya.sequencer.QueryAllSequencersByRollappRequest")
-	proto.RegisterType((*QueryAllSequencersByRollappResponse)(nil), "furyaxyz.furya.sequencer.QueryAllSequencersByRollappResponse")
-	proto.RegisterType((*QueryGetSchedulerRequest)(nil), "furyaxyz.furya.sequencer.QueryGetSchedulerRequest")
-	proto.RegisterType((*QueryGetSchedulerResponse)(nil), "furyaxyz.furya.sequencer.QueryGetSchedulerResponse")
-	proto.RegisterType((*QueryAllSchedulerRequest)(nil), "furyaxyz.furya.sequencer.QueryAllSchedulerRequest")
-	proto.RegisterType((*QueryAllSchedulerResponse)(nil), "furyaxyz.furya.sequencer.QueryAllSchedulerResponse")
+	proto.RegisterType((*SequencerInfo)(nil), "furychain.furya.sequencer.SequencerInfo")
+	proto.RegisterType((*QueryParamsRequest)(nil), "furychain.furya.sequencer.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "furychain.furya.sequencer.QueryParamsResponse")
+	proto.RegisterType((*QueryGetSequencerRequest)(nil), "furychain.furya.sequencer.QueryGetSequencerRequest")
+	proto.RegisterType((*QueryGetSequencerResponse)(nil), "furychain.furya.sequencer.QueryGetSequencerResponse")
+	proto.RegisterType((*QueryAllSequencerRequest)(nil), "furychain.furya.sequencer.QueryAllSequencerRequest")
+	proto.RegisterType((*QueryAllSequencerResponse)(nil), "furychain.furya.sequencer.QueryAllSequencerResponse")
+	proto.RegisterType((*QueryGetSequencersByRollappRequest)(nil), "furychain.furya.sequencer.QueryGetSequencersByRollappRequest")
+	proto.RegisterType((*QueryGetSequencersByRollappResponse)(nil), "furychain.furya.sequencer.QueryGetSequencersByRollappResponse")
+	proto.RegisterType((*QueryAllSequencersByRollappRequest)(nil), "furychain.furya.sequencer.QueryAllSequencersByRollappRequest")
+	proto.RegisterType((*QueryAllSequencersByRollappResponse)(nil), "furychain.furya.sequencer.QueryAllSequencersByRollappResponse")
+	proto.RegisterType((*QueryGetSchedulerRequest)(nil), "furychain.furya.sequencer.QueryGetSchedulerRequest")
+	proto.RegisterType((*QueryGetSchedulerResponse)(nil), "furychain.furya.sequencer.QueryGetSchedulerResponse")
+	proto.RegisterType((*QueryAllSchedulerRequest)(nil), "furychain.furya.sequencer.QueryAllSchedulerRequest")
+	proto.RegisterType((*QueryAllSchedulerResponse)(nil), "furychain.furya.sequencer.QueryAllSchedulerResponse")
 }
 
 func init() { proto.RegisterFile("furya/sequencer/query.proto", fileDescriptor_d09222b66a78a447) }
@@ -843,7 +843,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -852,7 +852,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) Sequencer(ctx context.Context, in *QueryGetSequencerRequest, opts ...grpc.CallOption) (*QueryGetSequencerResponse, error) {
 	out := new(QueryGetSequencerResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/Sequencer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/Sequencer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -861,7 +861,7 @@ func (c *queryClient) Sequencer(ctx context.Context, in *QueryGetSequencerReques
 
 func (c *queryClient) SequencerAll(ctx context.Context, in *QueryAllSequencerRequest, opts ...grpc.CallOption) (*QueryAllSequencerResponse, error) {
 	out := new(QueryAllSequencerResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/SequencerAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/SequencerAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -870,7 +870,7 @@ func (c *queryClient) SequencerAll(ctx context.Context, in *QueryAllSequencerReq
 
 func (c *queryClient) SequencersByRollapp(ctx context.Context, in *QueryGetSequencersByRollappRequest, opts ...grpc.CallOption) (*QueryGetSequencersByRollappResponse, error) {
 	out := new(QueryGetSequencersByRollappResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/SequencersByRollapp", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/SequencersByRollapp", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -879,7 +879,7 @@ func (c *queryClient) SequencersByRollapp(ctx context.Context, in *QueryGetSeque
 
 func (c *queryClient) SequencersByRollappAll(ctx context.Context, in *QueryAllSequencersByRollappRequest, opts ...grpc.CallOption) (*QueryAllSequencersByRollappResponse, error) {
 	out := new(QueryAllSequencersByRollappResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/SequencersByRollappAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/SequencersByRollappAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -888,7 +888,7 @@ func (c *queryClient) SequencersByRollappAll(ctx context.Context, in *QueryAllSe
 
 func (c *queryClient) Scheduler(ctx context.Context, in *QueryGetSchedulerRequest, opts ...grpc.CallOption) (*QueryGetSchedulerResponse, error) {
 	out := new(QueryGetSchedulerResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/Scheduler", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/Scheduler", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -897,7 +897,7 @@ func (c *queryClient) Scheduler(ctx context.Context, in *QueryGetSchedulerReques
 
 func (c *queryClient) SchedulerAll(ctx context.Context, in *QueryAllSchedulerRequest, opts ...grpc.CallOption) (*QueryAllSchedulerResponse, error) {
 	out := new(QueryAllSchedulerResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.sequencer.Query/SchedulerAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.sequencer.Query/SchedulerAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -962,7 +962,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/Params",
+		FullMethod: "/furychain.furya.sequencer.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -980,7 +980,7 @@ func _Query_Sequencer_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/Sequencer",
+		FullMethod: "/furychain.furya.sequencer.Query/Sequencer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Sequencer(ctx, req.(*QueryGetSequencerRequest))
@@ -998,7 +998,7 @@ func _Query_SequencerAll_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/SequencerAll",
+		FullMethod: "/furychain.furya.sequencer.Query/SequencerAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SequencerAll(ctx, req.(*QueryAllSequencerRequest))
@@ -1016,7 +1016,7 @@ func _Query_SequencersByRollapp_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/SequencersByRollapp",
+		FullMethod: "/furychain.furya.sequencer.Query/SequencersByRollapp",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SequencersByRollapp(ctx, req.(*QueryGetSequencersByRollappRequest))
@@ -1034,7 +1034,7 @@ func _Query_SequencersByRollappAll_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/SequencersByRollappAll",
+		FullMethod: "/furychain.furya.sequencer.Query/SequencersByRollappAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SequencersByRollappAll(ctx, req.(*QueryAllSequencersByRollappRequest))
@@ -1052,7 +1052,7 @@ func _Query_Scheduler_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/Scheduler",
+		FullMethod: "/furychain.furya.sequencer.Query/Scheduler",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Scheduler(ctx, req.(*QueryGetSchedulerRequest))
@@ -1070,7 +1070,7 @@ func _Query_SchedulerAll_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.sequencer.Query/SchedulerAll",
+		FullMethod: "/furychain.furya.sequencer.Query/SchedulerAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).SchedulerAll(ctx, req.(*QueryAllSchedulerRequest))
@@ -1079,7 +1079,7 @@ func _Query_SchedulerAll_Handler(srv interface{}, ctx context.Context, dec func(
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "furyaxyz.furya.sequencer.Query",
+	ServiceName: "furychain.furya.sequencer.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

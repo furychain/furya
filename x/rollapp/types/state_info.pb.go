@@ -103,7 +103,7 @@ type StateInfo struct {
 	// creationHeight is the height at which the UpdateState took place
 	CreationHeight uint64 `protobuf:"varint,7,opt,name=creationHeight,proto3" json:"creationHeight,omitempty"`
 	// status is the status of the state update
-	Status StateStatus `protobuf:"varint,8,opt,name=status,proto3,enum=furyaxyz.furya.rollapp.StateStatus" json:"status,omitempty"`
+	Status StateStatus `protobuf:"varint,8,opt,name=status,proto3,enum=furychain.furya.rollapp.StateStatus" json:"status,omitempty"`
 	// BDs is a list of block description objects (one per block)
 	// the list must be ordered by height, starting from startHeight to startHeight+numBlocks-1
 	BDs BlockDescriptors `protobuf:"bytes,9,opt,name=BDs,proto3" json:"BDs"`
@@ -262,9 +262,9 @@ func (m *BlockHeightToFinalizationQueue) GetFinalizationQueue() []StateInfoIndex
 }
 
 func init() {
-	proto.RegisterType((*StateInfoIndex)(nil), "furyaxyz.furya.rollapp.StateInfoIndex")
-	proto.RegisterType((*StateInfo)(nil), "furyaxyz.furya.rollapp.StateInfo")
-	proto.RegisterType((*BlockHeightToFinalizationQueue)(nil), "furyaxyz.furya.rollapp.BlockHeightToFinalizationQueue")
+	proto.RegisterType((*StateInfoIndex)(nil), "furychain.furya.rollapp.StateInfoIndex")
+	proto.RegisterType((*StateInfo)(nil), "furychain.furya.rollapp.StateInfo")
+	proto.RegisterType((*BlockHeightToFinalizationQueue)(nil), "furychain.furya.rollapp.BlockHeightToFinalizationQueue")
 }
 
 func init() {

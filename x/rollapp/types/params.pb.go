@@ -137,8 +137,8 @@ func (m *Params) GetDeployerWhitelist() []DeployerParams {
 }
 
 func init() {
-	proto.RegisterType((*DeployerParams)(nil), "furyaxyz.furya.rollapp.DeployerParams")
-	proto.RegisterType((*Params)(nil), "furyaxyz.furya.rollapp.Params")
+	proto.RegisterType((*DeployerParams)(nil), "furychain.furya.rollapp.DeployerParams")
+	proto.RegisterType((*Params)(nil), "furychain.furya.rollapp.Params")
 }
 
 func init() { proto.RegisterFile("furya/rollapp/params.proto", fileDescriptor_8a5e294b0dff70d2) }

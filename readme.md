@@ -7,8 +7,8 @@
 ![license](https://img.shields.io/github/license/furychain/furya)
 ![Go](https://img.shields.io/badge/go-1.18-blue.svg)
 ![issues](https://img.shields.io/github/issues/furychain/furya)
-![tests](https://github.com/furyaxyz/furyint/actions/workflows/test.yml/badge.svg?branch=main)
-![lint](https://github.com/furyaxyz/furyint/actions/workflows/lint.yml/badge.svg?branch=main)
+![tests](https://github.com/furychain/furyint/actions/workflows/test.yml/badge.svg?branch=main)
+![lint](https://github.com/furychain/furyint/actions/workflows/lint.yml/badge.svg?branch=main)
 
 ### Step 1: Install Go
 

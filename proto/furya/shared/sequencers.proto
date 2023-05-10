@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furyaxyz.furya.shared;
+package furychain.furya.shared;
 
 option go_package = "github.com/furychain/furya/shared/types";
 

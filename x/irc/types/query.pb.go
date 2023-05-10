@@ -298,12 +298,12 @@ func (m *QueryAllIRCRequestResponse) GetPagination() *query.PageResponse {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "furyaxyz.furya.irc.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "furyaxyz.furya.irc.QueryParamsResponse")
-	proto.RegisterType((*QueryGetIRCRequestRequest)(nil), "furyaxyz.furya.irc.QueryGetIRCRequestRequest")
-	proto.RegisterType((*QueryGetIRCRequestResponse)(nil), "furyaxyz.furya.irc.QueryGetIRCRequestResponse")
-	proto.RegisterType((*QueryAllIRCRequestRequest)(nil), "furyaxyz.furya.irc.QueryAllIRCRequestRequest")
-	proto.RegisterType((*QueryAllIRCRequestResponse)(nil), "furyaxyz.furya.irc.QueryAllIRCRequestResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "furychain.furya.irc.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "furychain.furya.irc.QueryParamsResponse")
+	proto.RegisterType((*QueryGetIRCRequestRequest)(nil), "furychain.furya.irc.QueryGetIRCRequestRequest")
+	proto.RegisterType((*QueryGetIRCRequestResponse)(nil), "furychain.furya.irc.QueryGetIRCRequestResponse")
+	proto.RegisterType((*QueryAllIRCRequestRequest)(nil), "furychain.furya.irc.QueryAllIRCRequestRequest")
+	proto.RegisterType((*QueryAllIRCRequestResponse)(nil), "furychain.furya.irc.QueryAllIRCRequestResponse")
 }
 
 func init() { proto.RegisterFile("furya/irc/query.proto", fileDescriptor_aab290f6c8f5fb60) }
@@ -373,7 +373,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.irc.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.irc.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -382,7 +382,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) IRCRequest(ctx context.Context, in *QueryGetIRCRequestRequest, opts ...grpc.CallOption) (*QueryGetIRCRequestResponse, error) {
 	out := new(QueryGetIRCRequestResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.irc.Query/IRCRequest", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.irc.Query/IRCRequest", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -391,7 +391,7 @@ func (c *queryClient) IRCRequest(ctx context.Context, in *QueryGetIRCRequestRequ
 
 func (c *queryClient) IRCRequestAll(ctx context.Context, in *QueryAllIRCRequestRequest, opts ...grpc.CallOption) (*QueryAllIRCRequestResponse, error) {
 	out := new(QueryAllIRCRequestResponse)
-	err := c.cc.Invoke(ctx, "/furyaxyz.furya.irc.Query/IRCRequestAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furychain.furya.irc.Query/IRCRequestAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -435,7 +435,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.irc.Query/Params",
+		FullMethod: "/furychain.furya.irc.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -453,7 +453,7 @@ func _Query_IRCRequest_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.irc.Query/IRCRequest",
+		FullMethod: "/furychain.furya.irc.Query/IRCRequest",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).IRCRequest(ctx, req.(*QueryGetIRCRequestRequest))
@@ -471,7 +471,7 @@ func _Query_IRCRequestAll_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/furyaxyz.furya.irc.Query/IRCRequestAll",
+		FullMethod: "/furychain.furya.irc.Query/IRCRequestAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).IRCRequestAll(ctx, req.(*QueryAllIRCRequestRequest))
@@ -480,7 +480,7 @@ func _Query_IRCRequestAll_Handler(srv interface{}, ctx context.Context, dec func
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "furyaxyz.furya.irc.Query",
+	ServiceName: "furychain.furya.irc.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

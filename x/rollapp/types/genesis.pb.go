@@ -109,7 +109,7 @@ func (m *GenesisState) GetBlockHeightToFinalizationQueueList() []BlockHeightToFi
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "furyaxyz.furya.rollapp.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "furychain.furya.rollapp.GenesisState")
 }
 
 func init() { proto.RegisterFile("furya/rollapp/genesis.proto", fileDescriptor_f4bf6d3c28914609) }

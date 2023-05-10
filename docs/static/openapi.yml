@@ -37912,7 +37912,7 @@ definitions:
     description: >-
       MsgCreateVestingAccountResponse defines the Msg/CreateVestingAccount
       response type.
-  furyaxyz.furya.irc.IRCRequest:
+  furychain.furya.irc.IRCRequest:
     type: object
     properties:
       reqId:
@@ -37920,10 +37920,10 @@ definitions:
         format: uint64
       request:
         type: string
-  furyaxyz.furya.irc.Params:
+  furychain.furya.irc.Params:
     type: object
     description: Params defines the parameters for the module.
-  furyaxyz.furya.irc.QueryAllIRCRequestResponse:
+  furychain.furya.irc.QueryAllIRCRequestResponse:
     type: object
     properties:
       ircRequest:
@@ -37961,7 +37961,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.irc.QueryGetIRCRequestResponse:
+  furychain.furya.irc.QueryGetIRCRequestResponse:
     type: object
     properties:
       ircRequest:
@@ -37972,14 +37972,14 @@ definitions:
             format: uint64
           request:
             type: string
-  furyaxyz.furya.irc.QueryParamsResponse:
+  furychain.furya.irc.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  furyaxyz.furya.rollapp.BlockDescriptor:
+  furychain.furya.rollapp.BlockDescriptor:
     type: object
     properties:
       height:
@@ -38001,7 +38001,7 @@ definitions:
           the root of a Merkle tree built from the ISRs of the block
           (Intermediate State Roots)
     description: BlockDescriptor defines a single rollapp chain block description.
-  furyaxyz.furya.rollapp.BlockDescriptors:
+  furychain.furya.rollapp.BlockDescriptors:
     type: object
     properties:
       BD:
@@ -38029,7 +38029,7 @@ definitions:
                 (Intermediate State Roots)
           description: BlockDescriptor defines a single rollapp chain block description.
     description: BlockDescriptors defines list of BlockDescriptor.
-  furyaxyz.furya.rollapp.BlockHeightToFinalizationQueue:
+  furychain.furya.rollapp.BlockHeightToFinalizationQueue:
     type: object
     properties:
       finalizationHeight:
@@ -38079,7 +38079,7 @@ definitions:
     title: >-
       BlockHeightToFinalizationQueue defines a map from block height to list of
       states to finalized
-  furyaxyz.furya.rollapp.DeployerParams:
+  furychain.furya.rollapp.DeployerParams:
     type: object
     properties:
       address:
@@ -38093,11 +38093,11 @@ definitions:
         title: >-
           max_rollapps is the maximum number of rollapps that address allowed to
           deploy
-  furyaxyz.furya.rollapp.MsgCreateRollappResponse:
+  furychain.furya.rollapp.MsgCreateRollappResponse:
     type: object
-  furyaxyz.furya.rollapp.MsgUpdateStateResponse:
+  furychain.furya.rollapp.MsgUpdateStateResponse:
     type: object
-  furyaxyz.furya.rollapp.Params:
+  furychain.furya.rollapp.Params:
     type: object
     properties:
       dispute_period_in_blocks:
@@ -38131,7 +38131,7 @@ definitions:
 
           In the case of an empty list, there are no restrictions
     description: Params defines the parameters for the module.
-  furyaxyz.furya.rollapp.QueryAllBlockHeightToFinalizationQueueResponse:
+  furychain.furya.rollapp.QueryAllBlockHeightToFinalizationQueueResponse:
     type: object
     properties:
       blockHeightToFinalizationQueue:
@@ -38214,7 +38214,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.rollapp.QueryAllLatestStateInfoIndexResponse:
+  furychain.furya.rollapp.QueryAllLatestStateInfoIndexResponse:
     type: object
     properties:
       latestStateInfoIndex:
@@ -38277,7 +38277,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.rollapp.QueryAllRollappResponse:
+  furychain.furya.rollapp.QueryAllRollappResponse:
     type: object
     properties:
       rollapp:
@@ -38364,7 +38364,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.rollapp.QueryAllStateInfoResponse:
+  furychain.furya.rollapp.QueryAllStateInfoResponse:
     type: object
     properties:
       stateInfo:
@@ -38489,7 +38489,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.rollapp.QueryGetBlockHeightToFinalizationQueueResponse:
+  furychain.furya.rollapp.QueryGetBlockHeightToFinalizationQueueResponse:
     type: object
     properties:
       blockHeightToFinalizationQueue:
@@ -38544,7 +38544,7 @@ definitions:
         title: >-
           BlockHeightToFinalizationQueue defines a map from block height to list
           of states to finalized
-  furyaxyz.furya.rollapp.QueryGetLatestFinalizedStateInfoResponse:
+  furychain.furya.rollapp.QueryGetLatestFinalizedStateInfoResponse:
     type: object
     properties:
       stateInfo:
@@ -38641,7 +38641,7 @@ definitions:
                     description.
             description: BlockDescriptors defines list of BlockDescriptor.
         description: StateInfo defines a rollapps' state.
-  furyaxyz.furya.rollapp.QueryGetLatestStateInfoIndexResponse:
+  furychain.furya.rollapp.QueryGetLatestStateInfoIndexResponse:
     type: object
     properties:
       latestStateInfoIndex:
@@ -38677,7 +38677,7 @@ definitions:
 
           2. LatestFinalizedStateIndex which defines the rollapps' current
           (latest) index of the latest StateInfo that was finalized
-  furyaxyz.furya.rollapp.QueryGetRollappResponse:
+  furychain.furya.rollapp.QueryGetRollappResponse:
     type: object
     properties:
       rollapp:
@@ -38737,7 +38737,7 @@ definitions:
 
           sequencers can be created and attached. The RollApp is identified by
           rollappId
-  furyaxyz.furya.rollapp.QueryGetStateInfoByHeightResponse:
+  furychain.furya.rollapp.QueryGetStateInfoByHeightResponse:
     type: object
     properties:
       stateInfo:
@@ -38834,7 +38834,7 @@ definitions:
                     description.
             description: BlockDescriptors defines list of BlockDescriptor.
         description: StateInfo defines a rollapps' state.
-  furyaxyz.furya.rollapp.QueryGetStateInfoResponse:
+  furychain.furya.rollapp.QueryGetStateInfoResponse:
     type: object
     properties:
       stateInfo:
@@ -38931,7 +38931,7 @@ definitions:
                     description.
             description: BlockDescriptors defines list of BlockDescriptor.
         description: StateInfo defines a rollapps' state.
-  furyaxyz.furya.rollapp.QueryParamsResponse:
+  furychain.furya.rollapp.QueryParamsResponse:
     type: object
     properties:
       params:
@@ -38969,7 +38969,7 @@ definitions:
 
               In the case of an empty list, there are no restrictions
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  furyaxyz.furya.rollapp.Rollapp:
+  furychain.furya.rollapp.Rollapp:
     type: object
     properties:
       rollappId:
@@ -39023,7 +39023,7 @@ definitions:
 
       sequencers can be created and attached. The RollApp is identified by
       rollappId
-  furyaxyz.furya.rollapp.StateInfo:
+  furychain.furya.rollapp.StateInfo:
     type: object
     properties:
       stateInfoIndex:
@@ -39117,7 +39117,7 @@ definitions:
                 description.
         description: BlockDescriptors defines list of BlockDescriptor.
     description: StateInfo defines a rollapps' state.
-  furyaxyz.furya.rollapp.StateInfoIndex:
+  furychain.furya.rollapp.StateInfoIndex:
     type: object
     properties:
       rollappId:
@@ -39149,7 +39149,7 @@ definitions:
 
       2. LatestFinalizedStateIndex which defines the rollapps' current (latest)
       index of the latest StateInfo that was finalized
-  furyaxyz.furya.rollapp.StateStatus:
+  furychain.furya.rollapp.StateStatus:
     type: string
     enum:
       - STATE_STATUS_UNSPECIFIED
@@ -39160,7 +39160,7 @@ definitions:
       - STATE_STATUS_UNSPECIFIED: zero-value for status ordering
        - STATE_STATUS_RECEIVED: STATE_STATUS_RECEIVED defines a rollapp state where the state update transaction was published on dYmension chain
        - STATE_STATUS_FINALIZED: STATE_STATUS_FINALIZED defines a rollapp state where the the "Dispute Period" has ended and this state is considered final
-  furyaxyz.furya.shared.Sequencers:
+  furychain.furya.shared.Sequencers:
     type: object
     properties:
       addresses:
@@ -39168,7 +39168,7 @@ definitions:
         items:
           type: string
     description: Sequencers defines list of sequencers addresses.
-  furyaxyz.furya.sequencer.Description:
+  furychain.furya.sequencer.Description:
     type: object
     properties:
       moniker:
@@ -39189,9 +39189,9 @@ definitions:
         type: string
         description: details define other optional details.
     description: Description defines a sequencer description.
-  furyaxyz.furya.sequencer.MsgCreateSequencerResponse:
+  furychain.furya.sequencer.MsgCreateSequencerResponse:
     type: object
-  furyaxyz.furya.sequencer.OperatingStatus:
+  furychain.furya.sequencer.OperatingStatus:
     type: string
     enum:
       - OPERATING_STATUS_UNSPECIFIED
@@ -39204,10 +39204,10 @@ definitions:
        - OPERATING_STATUS_PROPOSER: OPERATING_STATUS_PROPOSER defines a sequencer that is active and can propose state updates
        - OPERATING_STATUS_INACTIVE: OPERATING_STATUS_INACTIVE defines a sequencer that is not active and won't be scheduled
     title: OperatingStatus defines the operating status of a sequencer
-  furyaxyz.furya.sequencer.Params:
+  furychain.furya.sequencer.Params:
     type: object
     description: Params defines the parameters for the module.
-  furyaxyz.furya.sequencer.QueryAllSchedulerResponse:
+  furychain.furya.sequencer.QueryAllSchedulerResponse:
     type: object
     properties:
       scheduler:
@@ -39259,7 +39259,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.sequencer.QueryAllSequencerResponse:
+  furychain.furya.sequencer.QueryAllSequencerResponse:
     type: object
     properties:
       sequencerInfoList:
@@ -39414,7 +39414,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.sequencer.QueryAllSequencersByRollappResponse:
+  furychain.furya.sequencer.QueryAllSequencersByRollappResponse:
     type: object
     properties:
       sequencersByRollapp:
@@ -39582,7 +39582,7 @@ definitions:
                    repeated Bar results = 1;
                    PageResponse page = 2;
            }
-  furyaxyz.furya.sequencer.QueryGetSchedulerResponse:
+  furychain.furya.sequencer.QueryGetSchedulerResponse:
     type: object
     properties:
       scheduler:
@@ -39607,7 +39607,7 @@ definitions:
                - OPERATING_STATUS_PROPOSER: OPERATING_STATUS_PROPOSER defines a sequencer that is active and can propose state updates
                - OPERATING_STATUS_INACTIVE: OPERATING_STATUS_INACTIVE defines a sequencer that is not active and won't be scheduled
         title: Scheduler defines the operating status of a sequencer
-  furyaxyz.furya.sequencer.QueryGetSequencerResponse:
+  furychain.furya.sequencer.QueryGetSequencerResponse:
     type: object
     properties:
       sequencerInfo:
@@ -39732,7 +39732,7 @@ definitions:
                - OPERATING_STATUS_PROPOSER: OPERATING_STATUS_PROPOSER defines a sequencer that is active and can propose state updates
                - OPERATING_STATUS_INACTIVE: OPERATING_STATUS_INACTIVE defines a sequencer that is not active and won't be scheduled
         description: SequencerInfo holds information for user query.
-  furyaxyz.furya.sequencer.QueryGetSequencersByRollappResponse:
+  furychain.furya.sequencer.QueryGetSequencersByRollappResponse:
     type: object
     properties:
       rollappId:
@@ -39864,14 +39864,14 @@ definitions:
                  - OPERATING_STATUS_PROPOSER: OPERATING_STATUS_PROPOSER defines a sequencer that is active and can propose state updates
                  - OPERATING_STATUS_INACTIVE: OPERATING_STATUS_INACTIVE defines a sequencer that is not active and won't be scheduled
           description: SequencerInfo holds information for user query.
-  furyaxyz.furya.sequencer.QueryParamsResponse:
+  furychain.furya.sequencer.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  furyaxyz.furya.sequencer.Scheduler:
+  furychain.furya.sequencer.Scheduler:
     type: object
     properties:
       sequencerAddress:
@@ -39893,7 +39893,7 @@ definitions:
            - OPERATING_STATUS_PROPOSER: OPERATING_STATUS_PROPOSER defines a sequencer that is active and can propose state updates
            - OPERATING_STATUS_INACTIVE: OPERATING_STATUS_INACTIVE defines a sequencer that is not active and won't be scheduled
     title: Scheduler defines the operating status of a sequencer
-  furyaxyz.furya.sequencer.Sequencer:
+  furychain.furya.sequencer.Sequencer:
     type: object
     properties:
       sequencerAddress:
@@ -39989,7 +39989,7 @@ definitions:
       (sequencerAddress).
 
       The sequencer could be attached to only one rollapp (rollappId).
-  furyaxyz.furya.sequencer.SequencerInfo:
+  furychain.furya.sequencer.SequencerInfo:
     type: object
     properties:
       sequencer:

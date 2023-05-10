@@ -1087,27 +1087,27 @@ func RegisterQueryHandlerClient(ctx context.Context, mux *runtime.ServeMux, clie
 }
 
 var (
-	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furyaxyz", "furya", "rollapp", "params"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "rollapp", "params"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_Rollapp_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"furyaxyz", "furya", "rollapp", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Rollapp_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"furychain", "furya", "rollapp", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_RollappAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2}, []string{"furyaxyz", "furya", "rollapp"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_RollappAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 2}, []string{"furychain", "furya", "rollapp"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StateInfo_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"furyaxyz", "furya", "rollapp", "state_info", "rollappId", "index"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StateInfo_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"furychain", "furya", "rollapp", "state_info", "rollappId", "index"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StateInfoAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furyaxyz", "furya", "rollapp", "state_info"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StateInfoAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "rollapp", "state_info"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_LatestStateInfoIndex_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furyaxyz", "furya", "rollapp", "latest_state_info_index", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_LatestStateInfoIndex_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furychain", "furya", "rollapp", "latest_state_info_index", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_LatestStateInfoIndexAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furyaxyz", "furya", "rollapp", "latest_state_info_index"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_LatestStateInfoIndexAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "rollapp", "latest_state_info_index"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_BlockHeightToFinalizationQueue_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furyaxyz", "furya", "rollapp", "block_height_to_finalization_queue", "finalizationHeight"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_BlockHeightToFinalizationQueue_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furychain", "furya", "rollapp", "block_height_to_finalization_queue", "finalizationHeight"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_BlockHeightToFinalizationQueueAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furyaxyz", "furya", "rollapp", "block_height_to_finalization_queue"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_BlockHeightToFinalizationQueueAll_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3}, []string{"furychain", "furya", "rollapp", "block_height_to_finalization_queue"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_LatestFinalizedStateInfo_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furyaxyz", "furya", "rollapp", "latest_finalized_state_info", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_LatestFinalizedStateInfo_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4}, []string{"furychain", "furya", "rollapp", "latest_finalized_state_info", "rollappId"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_GetStateInfoByHeight_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"furyaxyz", "furya", "rollapp", "get_state_info_by_height", "rollappId", "height"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_GetStateInfoByHeight_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 1, 2, 2, 2, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"furychain", "furya", "rollapp", "get_state_info_by_height", "rollappId", "height"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (

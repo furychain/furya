@@ -110,7 +110,7 @@ type IRCRequest struct {
 	// message is the IBC message to be handled
 	Message *types.Any `protobuf:"bytes,2,opt,name=message,proto3" json:"message,omitempty"`
 	// msg_type is the type of the IBC message
-	MessageType MsgType `protobuf:"varint,3,opt,name=message_type,json=messageType,proto3,enum=furyaxyz.furya.irc.MsgType" json:"message_type,omitempty"`
+	MessageType MsgType `protobuf:"varint,3,opt,name=message_type,json=messageType,proto3,enum=furychain.furya.irc.MsgType" json:"message_type,omitempty"`
 }
 
 func (m *IRCRequest) Reset()         { *m = IRCRequest{} }
@@ -168,8 +168,8 @@ func (m *IRCRequest) GetMessageType() MsgType {
 }
 
 func init() {
-	proto.RegisterEnum("furyaxyz.furya.irc.MsgType", MsgType_name, MsgType_value)
-	proto.RegisterType((*IRCRequest)(nil), "furyaxyz.furya.irc.IRCRequest")
+	proto.RegisterEnum("furychain.furya.irc.MsgType", MsgType_name, MsgType_value)
+	proto.RegisterType((*IRCRequest)(nil), "furychain.furya.irc.IRCRequest")
 }
 
 func init() { proto.RegisterFile("furya/irc/irc_requests.proto", fileDescriptor_174363cdec923693) }

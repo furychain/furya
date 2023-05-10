@@ -53,7 +53,7 @@ func (StateStatus) EnumDescriptor() ([]byte, []int) {
 }
 
 func init() {
-	proto.RegisterEnum("furyaxyz.furya.rollapp.StateStatus", StateStatus_name, StateStatus_value)
+	proto.RegisterEnum("furychain.furya.rollapp.StateStatus", StateStatus_name, StateStatus_value)
 }
 
 func init() {

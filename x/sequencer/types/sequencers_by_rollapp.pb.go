@@ -82,7 +82,7 @@ func (m *SequencersByRollapp) GetSequencers() types.Sequencers {
 }
 
 func init() {
-	proto.RegisterType((*SequencersByRollapp)(nil), "furyaxyz.furya.sequencer.SequencersByRollapp")
+	proto.RegisterType((*SequencersByRollapp)(nil), "furychain.furya.sequencer.SequencersByRollapp")
 }
 
 func init() {

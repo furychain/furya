@@ -1,5 +1,5 @@
 syntax = "proto3";
-package furyaxyz.furya.rollapp;
+package furychain.furya.rollapp;
 import "gogoproto/gogo.proto";
 
 
