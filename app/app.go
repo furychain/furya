@@ -124,7 +124,7 @@ var (
 )
 
 const (
-	AccountAddressPrefix = "fury"
+	AccountAddressPrefix = "did:fury:grid"
 	Name                 = "furya"
 )
 
