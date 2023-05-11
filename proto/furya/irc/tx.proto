@@ -1,0 +1,7 @@
+syntax = "proto3";
+package furychain.furya.irc;
+
+option go_package = "github.com/furychain/furya/x/irc/types";
+
+// Msg defines the Msg service.
+service Msg {}
